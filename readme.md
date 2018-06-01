@@ -1,6 +1,6 @@
 # Githost Checkout All
 
-This is a small quick and dirty script that pulls all repos from a hosted gitlab instace that for some _crazy_ reason doesn't have global code search
+This is a small *quick and dirty script* that pulls all repos from a hosted gitlab instace that for some _crazy_ reason doesn't have global code search
 
 It's probably full of bugs, it's not published nicely, it requires several things on your path, so use at your own risk.
 
@@ -12,7 +12,11 @@ pull the project/install dependencies and create a new file called config.json a
 
 note: this is only necessary if you have private repos
 
-Go to your account in gitlab and select AccessTokens, and create a personal access token with rights to checkout repos. [Direct gitlab url](https://gitlab.com/profile/personal_access_tokens). 
+Go to your account in gitlab and select AccessTokens, and create a personal access token with rights to checkout repos (`api` scope). [Direct gitlab url](https://gitlab.com/profile/personal_access_tokens). 
+
+### Path
+
+Relative from the directory the area you want the repos to go. FILE must exist
 
 ### Setting the base url
 
