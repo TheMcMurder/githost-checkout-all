@@ -1,0 +1,5 @@
+{
+  "key": "YourGithostKeyhere",
+  "path": "relativePathToWhereYouWantTheReposToGo",
+  "baseUrl": "baseUrl"
+}

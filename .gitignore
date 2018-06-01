@@ -1,0 +1,12 @@
+sofe
+jspm_packages
+node_modules
+npm-debug.log
+coverage
+jsconfig.json
+.vscode
+typings.json
+typings
+yarn-error.log
+.DS_Store
+config.json
