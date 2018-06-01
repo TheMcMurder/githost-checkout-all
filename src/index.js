@@ -8,13 +8,12 @@ fetchAllPackages().then(packages => {
   const frontend = packages.filter((package) => {
     return package.name_with_namespace.indexOf('front-end') !== -1
   })
-  console.log('frontend', frontend.length)
   for (let i = 0; i < frontend.length; i++) {
     const repo = frontend[i]
-    console.log(`Pulling ${repo.name}`)
+    console.info(`Pulling ${repo.name}`)
     git(config.path).clone(repo.ssh_url_to_repo, function(err, data) {
       if (err && err.indexOf('already exists') !== -1) {
-        console.log(`${repo.name} already exists`)
+        console.info(`${repo.name} already exists`)
         git(`${config.path}/${repo.name}`).checkout('master').pull('origin/master')
       }
     })
