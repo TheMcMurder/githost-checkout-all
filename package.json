@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "0.18.0",
-    "nodegit": "0.22.1",
     "simple-git": "1.95.0"
   }
 }
