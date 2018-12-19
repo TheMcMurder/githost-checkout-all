@@ -1,4 +1,5 @@
 {
+  "namespace": "namespace of packages to pull ex: front-end",
   "key": "YourGithostKeyhere",
   "path": "relativePathToWhereYouWantTheReposToGo",
   "baseUrl": "baseUrl"
