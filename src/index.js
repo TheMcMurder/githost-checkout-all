@@ -36,7 +36,6 @@ fetchAllPackages().then(packages => {
           console.info(`Successfully pulled ${repo.path}`)
         })
         .catch(err => {
-          debugger
           errorMessages.push(`an error occured while trying to clone or pull "${repo.name}": ${err}`)
         })
     })
